@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="index.css">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>Currency Converter</header>
+        <form action="#">
+            <div class="amount">
+                <label for="amount">Enter Amount<br>
+                    <input type="text" name="amount" id="amount">
+                </label>
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                    <label for="from">From<br>
+                        <div class="select-box">
+                            <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+                            <select></select>
+                        </div>
+                    </label>
+                </div>
+                <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                <div class="to">
+                    <label for="to">To<br>
+                        <div class="select-box">
+                            <img src="https://flagcdn.com/48x36/jp.png" alt="flag">
+                            <select></select>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="exchange-rate">Get the latest world currency exchange rates...</i>
+            </div>
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
+    <script src="countryDB.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

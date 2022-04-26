@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Roboto+Serif:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #473533;
+}
+
+.container {
+    width: 365px;
+    padding: 32px;
+    margin: 10% auto auto auto;
+    background-color: white;
+    border: 3px solid #C3AEAC;
+    border-radius: 8px;
+}
+
+.container header {
+    font-size: 30px;
+    font-weight: 520;
+    text-align: center;
+}
+
+.container form {
+    margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button) {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+form input {
+    height: 42px;
+    padding: 0 18px;
+    font-size: 17px;
+    border: 2px solid rgba(71, 71, 71, 0.5);
+}
+
+form label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+form input:focus {
+    padding: 0 15px;
+    border: 2px solid #473533;
+}
+
+form .drop-list {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.drop-list .select-box {
+    display: flex;
+    height: 45px;
+    width: 115px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(71, 71, 71, 0.5);
+    border-radius: 5px;
+}
+
+.select-box select {
+    width: auto;
+    font-size: 15px;
+    margin: 0 -5px 0 5px;
+}
+
+.select-box select::-webkit-scrollbar {
+    width: 6.5px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+.select-box select::-webkit-scrollbar-thumb {
+    background-color: #474747;
+    border-radius: 8px;
+    border-right: 1.5px solid white;
+}
+
+.select-box img {
+    max-width: 25px;
+}
+
+.drop-list .icon {
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+form .exchange-rate {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 20px 0 30px;
+}
+
+form button {
+    height: 50px;
+    color: white;
+    font-size: 17px;
+    font-weight: 480;
+    background: #473533;
+    border: 2px solid #473533;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    color: #473533;
+    background-color: white;
+    transition: color 0.45s ease;
+}
